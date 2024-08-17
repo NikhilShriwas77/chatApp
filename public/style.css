@@ -229,34 +229,56 @@ body {
 
 /* Responsive Design */
 @media (max-width: 600px) {
-    .app {
+     .app {
         max-width: 100%;
-        border-radius: 0;
+        border-radius: 0; /* Flat design for mobile screens */
     }
 
     .screen .form {
-        width: 90%;
+        width: 95%; /* Increase width to use more screen space */
+        margin: 0 auto; /* Center the form */
+        padding: 10px; /* Add padding inside the form */
     }
 
     .chat-screen .messages {
-        padding: 10px;
+        padding: 15px; /* Increase padding for better spacing */
+        font-size: 14px; /* Adjust font size for readability */
     }
 
     .chat-screen .header {
-        padding: 0 10px;
+        padding: 10px; /* Increase padding for better touch targets */
+        display: flex;
+        justify-content: space-between; /* Space out logo and button */
+        align-items: center; /* Vertically center items */
     }
 
     .chat-screen .header .logo {
-        font-size: 16px;
+        font-size: 18px; /* Increase logo font size for better visibility */
     }
 
     .chat-screen .header button {
-        font-size: 14px;
-        padding: 4px 8px;
+        font-size: 16px; /* Increase button text size */
+        padding: 6px 12px; /* Adjust button padding for easier interaction */
+    }
+
+    .chat-screen .typebox {
+        display: flex;
+        justify-content: space-between; /* Space out input and button */
+        align-items: center; /* Vertically center input and button */
+        padding: 10px; /* Add padding around the typebox */
+    }
+
+    .chat-screen .typebox input {
+        flex: 1; /* Make input field take up available space */
+        margin-right: 8px; /* Space between input and button */
+        padding: 8px; /* Add padding inside the input */
+        font-size: 16px; /* Increase font size for readability */
     }
 
     .chat-screen .typebox button {
-        width: 60px;
+        width: auto; /* Adjust button width to fit content */
+        padding: 8px 16px; /* Increase padding for better tap targets */
+        font-size: 16px; /* Ensure button text is readable */
     }
 }
 
